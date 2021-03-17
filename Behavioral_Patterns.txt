@@ -1,0 +1,33 @@
+Observer - determina dependenta 1:multi in asa fel ca in urma schimbarii unui obiect,
+toate obiectele care depind de el, sa afle despre asta si sa se upate
+Se foloseste in dezvoltarea UI diferitor aplicatii(subscribe la diferite evenimente)
+participanti(subject -tine state, cand se schimba state are loc metoda notify la subject,
+ne iteram prin colectie si chemam update)
+
+Utilizam  cand: 
+	obiectul care trimite notificare despre schimbare nu trebuie sa stie de subscriberi
+	schimbarea unui obiect trebuie sa fie transmis mai departe
+
+Strategy - se foloseste cand sunt o ierarhie de clase care se deosebesc prin comportamentul
+lor sau cand avem nevoie de diferite variante de comportament.
+Utilizam cand:
+	clasele difera doar prin comportament
+
+
+
+Template - cand avem un sablon si permitem claselor copil sa defineasca doar cateva 
+componente.
+
+Template method vs strategy- strategy incapsuleaza 
+intreg algoritm, template insa incapsuleaza doar unele parti
+
+Visitor - permite sa determine operatii care se indeplinesc cu fiecare obiect din oarecare 
+structura ca fara sa se schimbe clasa acestor obiecte
+se foloseste cand intr-o structura sunt obiecte a diferitor clase. si vrem sa facem operatii
+de clasa data.
+
+El permite sa facem diferite operatii asupra unei structuri.
+ne permite sa adaugam operatii fara sa schimbam elementele
+
+Elementul are o singura Metoda(Accept) care accepta visitorul
+Visitor are metoda Visit()
